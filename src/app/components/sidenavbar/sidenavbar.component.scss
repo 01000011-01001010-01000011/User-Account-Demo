@@ -1,0 +1,90 @@
+.sidenavbar-container{
+    width: 15vw;
+    height: 85vh;
+   /* background-image: linear-gradient(to bottom, #1d04ff, rgb(21, 4, 255));*/
+    background-color: #000000;
+
+   /* background-image: linear-gradient(to bottom, #020074, rgb(0, 12, 117));*/
+
+    border-radius: 10px;
+
+    margin-top: 2%;
+    margin-left: 1%;
+}
+
+.sidenavbarTitle {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 5%;
+}
+
+.sidenavbar-container h2{  
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+   
+    text-align: center;
+
+    margin-top: 5%;
+
+}
+
+.quick-links-list-container {
+    list-style: none;
+}
+
+.quick-links-list-container li {
+    color: #ffffff;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 1.5em;
+
+    margin-top: 10%;
+
+    margin-bottom: 10%;
+}
+
+.quick-links-divider {
+    border-top-color: gray;
+}
+
+.sidenavbar-image-container {  
+    width: 100%;  
+    height: 62%;
+    display: flex;
+    flex-direction: row;
+}
+
+.sidenavbar-image-container-left, .sidenavbar-image-container-right {
+    display: flex;
+    flex-direction: column;
+
+    width: 50%;
+    height: 100%;
+}
+
+.markets-na, .markets-euro, .markets-asia {
+    display: flex;
+    flex-direction: column;
+
+    height: 50%;    
+}
+
+.markets-container-top {
+    margin-bottom: 1%;
+}
+
+.markets-container-top h2 {
+    width: 80%;
+    text-align: left;
+    margin-left: 8%;
+}
+
+.markets-container-bottom img {
+    width: 75%;    
+
+    margin-left: 8%;
+}
+
+

@@ -1,0 +1,197 @@
+$base-color: #006ad4;
+
+.app-header-container {
+    z-index: 1;
+}
+
+.header-container {
+    width: 100vw;
+    background-color: #0803fa;
+
+    z-index: 1;
+}
+
+ul {    
+    width: 40vw;
+    height: 4vh;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+
+    margin: 0 auto;
+}
+
+li {    
+    color: #ffffff;
+    
+    font-family: Helvetica, Arial, sans-serif;
+       
+    font-size: 1.5em;
+
+    text-transform: uppercase;
+ }
+
+ li:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    /*font-weight: bold;*/
+ }
+
+ li a {
+     color: #ffffff;
+     text-decoration: none;
+ }
+
+ .sub-menu-container {   
+    position: relative;  
+    width: 2vw;
+    height: 100%;
+       
+    background-image: url('../../../assets/images/account-icon-dark.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    z-index: 2;
+}
+
+.user-account-menu{
+
+    position: absolute;
+    
+    background-color: #0000ff;
+
+    width: 5vw;   
+
+    height: min-content;
+        
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin-top: 4vh;
+
+    margin-left: calc(-5vw / 2.5);  
+
+    padding-bottom: 5%;
+
+}
+
+.user-account-menu li {
+
+    width: 100%;
+
+    height: min-content + 50px;
+   
+    display: flex;
+    justify-content: center;
+   
+    font-size: 1em;
+  
+    margin: 2% 0 2% -1vw;
+
+    padding-top: 5%;
+    padding-bottom: 5%;
+    
+}
+
+.name-container {
+    display: flex;
+    align-items: center;
+
+    width: fit-content;
+    height: 100%;
+    
+    font-family: Helvetica, Arial, sans-serif;
+       
+    font-size: 1.25em;
+    
+    color: white;
+
+    z-index: 5;
+}
+
+
+/*** SIDE NAV BAR ***/
+
+.sidenavbar-container{
+    position: absolute;
+    top: 0; 
+    left: 0;
+
+    width: 60vw;
+    height: 70vh; 
+    
+    background-color: #000000;
+
+    z-index: 2;
+
+}
+
+
+#mobileSideNavbarIcon {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 10%;
+
+    margin: 5% 0 0 5%;
+
+    z-index: 0;
+}
+
+#sideNavBarMenu {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: 100%;
+      
+    list-style: none;
+    
+    margin: 10% 0 0 0;
+    padding: 0 0 0 0;
+
+
+}
+
+#sideNavBarMenu li {
+    
+    width: 90%;
+
+    font-size: 1em;
+    color: #ffffff;
+
+    text-align: left;
+
+    margin: 0 0 0 5%;
+    padding: 0 0 0 0;
+}
+
+
+#sideNavBarMenu li:hover {
+    text-decoration: underline;
+}
+
+.btn-close {
+    position: absolute;
+
+    top: 0;
+    right: 0;
+
+    width: 15%;
+    height: 8%;
+
+    font-size: 2em;
+
+    background-color: red;
+    color: white;
+
+    border-radius: 10px;
+
+    margin: 5% 5% 0 0;
+}

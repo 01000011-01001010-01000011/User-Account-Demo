@@ -1,0 +1,47 @@
+<div class="register-form-container">
+    
+    <button type="button" id="closeRegisterForm" (click)="closeRegisterForm()">&times;</button>
+
+    <form [formGroup]="registerForm" (ngSubmit)="onSubmit()" class="register-form">
+
+        <h1>Sign Up</h1>
+
+        <div class="inputs-register">
+            
+            <label id="registerEmailLabel" for="email">Email: </label>
+            <input id="email" type="email" formControlName="email">
+            
+             <div *ngIf="boolNewUser" class="error-message-container">
+                {{ errorMessage }}
+             </div>    
+  
+            <label id="registerPasswordLabel" for="password">Password: </label>
+            <input id="password" type="password" formControlName="password" (blur)="checkPassword()" (keydown)="clearErrors($event)">
+             
+            <div *ngIf="boolPasswordError" class="error-message-container">
+                {{ errorMessagePassword }}
+            </div>             
+
+            <label id="confirmPasswordLabel" for="confirmPassword">Confirm Password: </label>
+            <input id="confirmPassword" type="password" formControlName="confirmPassword" (blur)="checkPasswordMatch()" (keydown)="clearErrors($event)">
+            
+            <div class="error-message-container">
+                {{ errorMessageConfirmPassword }}
+            </div>
+
+            <label id="registerFirstNameLabel" for="firstName">First Name: </label>
+            <input id="firstName" type="text" formControlName="firstName">
+              
+            <label id="registerLastNameLabel" for="lastName">Last Name: </label>
+            <input id="lastName" type="text" formControlName="lastName">        
+         
+        </div>
+
+        <div class="buttons-register">
+            <button type="submit" [disabled]="!registerForm.valid" class="btn btn-signup" id="signupBtn">Submit</button>
+            <button type="button" class="btn btn-cancel" id="cancelBtn" (click)="closeRegisterForm()">Cancel</button>
+        </div>
+
+    </form>
+
+</div>
